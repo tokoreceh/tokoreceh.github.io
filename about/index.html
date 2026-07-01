@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+    <!-- ====== SEO META TAGS ====== -->
+    <title>Tentang RECEH Token - Cryptocurrency Indonesia | Tim & Visi</title>
+    <meta name="description" content="Kenali RECEH Token lebih dekat. Pelajari visi, misi, tim pengembang, dan perjalanan RECEH cryptocurrency Indonesia yang inovatif.">
+    <meta name="keywords" content="tentang rec eh, rec eh token, cryptocurrency indonesia, tim rec eh, visi rec eh, crypto indonesia, blockchain indonesia">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="CryptoRECEH">
+    <link rel="canonical" href="https://tokoreceh.github.io/about">
+
+    <!-- ====== OPEN GRAPH ====== -->
+    <meta property="og:title" content="Tentang RECEH Token - Cryptocurrency Indonesia | Tim & Visi">
+    <meta property="og:description" content="Kenali RECEH Token lebih dekat. Pelajari visi, misi, tim pengembang, dan perjalanan RECEH cryptocurrency Indonesia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tokoreceh.github.io/about">
+    <meta property="og:image" content="https://tokoreceh.github.io/favicon.png">
+    <meta property="og:site_name" content="RECEH Token">
+    <meta property="og:locale" content="id_ID">
+
+    <!-- ====== TWITTER CARD ====== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tentang RECEH Token - Cryptocurrency Indonesia">
+    <meta name="twitter:description" content="Kenali RECEH Token lebih dekat. Pelajari visi, misi, tim pengembang RECEH.">
+    <meta name="twitter:image" content="https://tokoreceh.github.io/favicon.png">
+
+    <!-- ====== SCHEMA.ORG ====== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "RECEH Token",
+        "description": "Platform cryptocurrency Indonesia yang inovatif dibangun di atas BNB Smart Chain.",
+        "url": "https://tokoreceh.github.io",
+        "logo": "https://tokoreceh.github.io/favicon.png",
+        "sameAs": [
+            "https://x.com/cryptoreceh_",
+            "https://t.me/cryptorecehcom",
+            "https://github.com/cryptorecehcom"
+        ],
+        "founder": {
+            "@type": "Person",
+            "name": "Tim RECEH"
+        }
+    }
+    </script>
+
+    <!-- ====== FAVICON ====== -->
+    <link rel="shortcut icon" type="image/png" href="https://tokoreceh.github.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://tokoreceh.github.io/favicon.png">
+
+    <!-- ====== EXTERNAL LIBRARIES ====== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        /* ====== CSS VARIABLES ====== */
+        :root {
+            --gold: #FFD700;
+            --gold-dark: #FF8C00;
+            --gold-glow: rgba(255, 215, 0, 0.15);
+            --bg-dark: #0A0A0F;
+            --card-bg: rgba(18, 18, 24, 0.75);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-dark);
+            color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        /* ====== ANIMATIONS ====== */
+        @keyframes floatSlow {
+            0%,
+            100% { transform: translateY(0px) scale(1); }
+            50% { transform: translateY(-10px) scale(1.02); }
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes hologramPulse {
+            0% { text-shadow: 0 0 7px rgba(255, 215, 0, 0.2), 0 0 20px rgba(255, 215, 0, 0.05); opacity: 0.9; }
+            50% { text-shadow: 0 0 25px rgba(255, 215, 0, 0.6), 0 0 60px rgba(255, 215, 0, 0.2); opacity: 1; }
+            100% { text-shadow: 0 0 7px rgba(255, 215, 0, 0.2), 0 0 20px rgba(255, 215, 0, 0.05); opacity: 0.9; }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes borderGlow {
+            0%, 100% { border-color: rgba(255, 215, 0, 0.1); box-shadow: 0 0 20px rgba(255, 215, 0, 0.02); }
+            50% { border-color: rgba(255, 215, 0, 0.25); box-shadow: 0 0 40px rgba(255, 215, 0, 0.08); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.6; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.6; }
+        }
+
+        /* ====== BACKGROUND EFFECTS ====== */
+        .bg-gradient-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(circle at 10% 10%, rgba(255, 215, 0, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 90%, rgba(255, 215, 0, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.02) 0%, transparent 60%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hologram-orb {
+            position: fixed;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.05;
+            filter: blur(80px);
+            animation: floatSlow 12s ease-in-out infinite;
+        }
+
+        .hologram-orb:nth-child(1) {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, #FFD700, transparent 70%);
+            top: -200px;
+            left: -200px;
+            animation-delay: 0s;
+        }
+
+        .hologram-orb:nth-child(2) {
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, #FF8C00, transparent 70%);
+            bottom: -250px;
+            right: -250px;
+            animation-delay: -5s;
+        }
+
+        .hologram-orb:nth-child(3) {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, #FFD700, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: -10s;
+            opacity: 0.03;
+        }
+
+        /* ====== GLASS CARD ====== */
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 215, 0, 0.08);
+            border-radius: 28px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: 29px;
+            background: linear-gradient(135deg, transparent 30%, rgba(255, 215, 0, 0.06), transparent 70%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+        }
+
+        .glass-card:hover::before {
+            opacity: 1;
+        }
+
+        .glass-card:hover {
+            border-color: rgba(255, 215, 0, 0.18);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0.03);
+        }
+
+        /* ====== GOLD GRADIENT ====== */
+        .gold-gradient {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 25%, #FFD700 50%, #FF8C00 75%, #FFD700 100%);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+            animation: hologramPulse 4s ease-in-out infinite, gradientMove 6s ease-in-out infinite;
+        }
+
+        /* ====== BUTTONS ====== */
+        .btn-primary {
+            background: linear-gradient(135deg, #FFD700, #FFAA00);
+            color: #0A0A0F;
+            font-weight: 700;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            border: none;
+            transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1);
+            box-shadow: 0 4px 25px rgba(255, 215, 0, 0.25);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+            transform: rotate(45deg);
+            transition: all 0.6s;
+        }
+
+        .btn-primary:hover::after {
+            left: 100%;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 40px rgba(255, 215, 0, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 215, 0, 0.06);
+            border: 1.5px solid rgba(255, 215, 0, 0.2);
+            color: #FFD700;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 215, 0, 0.12);
+            border-color: #FFD700;
+            transform: translateY(-2px);
+            box-shadow: 0 0 35px rgba(255, 215, 0, 0.08);
+        }
+
+        /* ====== SCROLLBAR ====== */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.01);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 215, 0, 0.15);
+            border-radius: 10px;
+        }
+
+        /* ====== ABOUT CONTENT ====== */
+        .about-section {
+            padding: 1.75rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .about-section:last-child {
+            border-bottom: none;
+        }
+
+        .about-section h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .about-section p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        .about-section .highlight-box {
+            background: rgba(255, 215, 0, 0.04);
+            border: 1px solid rgba(255, 215, 0, 0.08);
+            border-radius: 16px;
+            padding: 1.25rem;
+            margin: 1rem 0;
+        }
+
+        .about-section .highlight-box strong {
+            color: #FFD700;
+        }
+
+        /* ====== TEAM CARDS ====== */
+        .team-card {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid rgba(255, 215, 0, 0.05);
+            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1);
+        }
+
+        .team-card:hover {
+            border-color: rgba(255, 215, 0, 0.2);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 215, 0, 0.03);
+        }
+
+        .team-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #FFD700, #FF8C00);
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0A0A0F;
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .team-card:hover .team-avatar {
+            transform: scale(1.05);
+            box-shadow: 0 12px 40px rgba(255, 215, 0, 0.25);
+        }
+
+        .team-card h4 {
+            font-weight: 700;
+            font-size: 1rem;
+            color: white;
+            margin-bottom: 0.25rem;
+        }
+
+        .team-card .role {
+            font-size: 0.75rem;
+            color: #FFD700;
+            font-weight: 500;
+        }
+
+        .team-card .bio {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.4);
+            margin-top: 0.5rem;
+            line-height: 1.5;
+        }
+
+        .team-card .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-top: 0.75rem;
+        }
+
+        .team-card .social-links a {
+            color: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .team-card .social-links a:hover {
+            color: #FFD700;
+            transform: scale(1.2);
+        }
+
+        /* ====== STATS ====== */
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #FFD700;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            margin-top: 0.25rem;
+        }
+
+        /* ====== MILESTONE ====== */
+        .milestone-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .milestone-item:last-child {
+            border-bottom: none;
+        }
+
+        .milestone-date {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #FFD700;
+            min-width: 60px;
+            padding-top: 0.1rem;
+        }
+
+        .milestone-content {
+            flex: 1;
+        }
+
+        .milestone-content h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .milestone-content p {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.4);
+            margin-top: 0.1rem;
+        }
+
+        /* ====== RESPONSIVE ====== */
+        @media (max-width: 480px) {
+            .glass-card { padding: 1.25rem; }
+            .about-section h2 { font-size: 1.05rem; }
+            .about-section p { font-size: 0.85rem; }
+            .stat-number { font-size: 1.8rem; }
+            .team-card { padding: 1rem; }
+            .team-avatar { width: 60px; height: 60px; font-size: 1.5rem; }
+        }
+
+        @media (min-width: 768px) {
+            .about-section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ====== BACKGROUND EFFECTS ====== -->
+    <div class="bg-gradient-overlay"></div>
+    <div class="hologram-orb"></div>
+    <div class="hologram-orb"></div>
+    <div class="hologram-orb"></div>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <div class="max-w-5xl mx-auto px-4 py-6 relative z-10">
+
+        <!-- ====== NAVBAR ====== -->
+        <nav class="glass-card px-6 py-3 mb-6 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#FFD700] to-[#FF8C00] p-0.5 flex-shrink-0">
+                    <img src="https://tokoreceh.github.io/favicon.png"
+                        alt="RECEH Token" class="w-full h-full rounded-full object-cover border border-[#0A0A0F]">
+                </div>
+                <span class="font-black text-lg gold-gradient">RECEH</span>
+            </div>
+            <a href="https://tokoreceh.github.io/" class="btn-primary text-xs py-2 px-4" style="background: linear-gradient(135deg, #FFD700, #FFAA00); color: #0A0A0F; font-weight: 700; padding: 0.5rem 1.25rem; border-radius: 50px; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1); box-shadow: 0 4px 25px rgba(255, 215, 0, 0.25);">
+                <i class="fa-solid fa-arrow-left"></i> Kembali
+            </a>
+        </nav>
+
+        <!-- ====== HEADER ====== -->
+        <div class="glass-card p-6 md:p-10 mb-6 text-center">
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-2 bg-[#FFD700]/10 border border-[#FFD700]/20 rounded-full px-4 py-1.5 mb-4">
+                    <i class="fa-solid fa-info-circle text-[#FFD700] text-xs"></i>
+                    <span class="text-xs font-semibold text-[#FFD700]">TENTANG KAMI</span>
+                </div>
+                <h1 class="text-3xl md:text-5xl font-black gold-gradient text-balance">
+                    Tentang <span class="text-white">RECEH</span> Token
+                </h1>
+                <p class="text-gray-400 mt-3 max-w-2xl mx-auto text-sm md:text-base">
+                    RECEH adalah cryptocurrency inovatif yang dibangun di atas BNB Smart Chain, 
+                    dirancang untuk memberdayakan ekosistem crypto Indonesia dengan teknologi 
+                    blockchain yang aman, cepat, dan terjangkau.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 mt-5">
+                    <a href="#team" class="btn-primary text-sm">
+                        <i class="fa-solid fa-users"></i> Tim Kami
+                    </a>
+                    <a href="#mission" class="btn-secondary text-sm">
+                        <i class="fa-solid fa-bullseye"></i> Visi & Misi
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== STATS ====== -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+            <div class="glass-card p-4 text-center float-card" style="animation: floatSlow 6s ease-in-out infinite;">
+                <div class="stat-number">100M</div>
+                <div class="stat-label">Total Supply</div>
+            </div>
+            <div class="glass-card p-4 text-center float-card" style="animation: floatSlow 6s ease-in-out infinite; animation-delay: -1.5s;">
+                <div class="stat-number">BSC</div>
+                <div class="stat-label">Blockchain</div>
+            </div>
+            <div class="glass-card p-4 text-center float-card" style="animation: floatSlow 6s ease-in-out infinite; animation-delay: -3s;">
+                <div class="stat-number">1K+</div>
+                <div class="stat-label">Komunitas</div>
+            </div>
+            <div class="glass-card p-4 text-center float-card" style="animation: floatSlow 6s ease-in-out infinite; animation-delay: -4.5s;">
+                <div class="stat-number">2026</div>
+                <div class="stat-label">Tahun Berdiri</div>
+            </div>
+        </div>
+
+        <!-- ====== CONTENT ====== -->
+        <div class="glass-card p-6 md:p-10">
+
+            <!-- ====== VISI & MISI ====== -->
+            <div id="mission" class="about-section">
+                <h2><i class="fa-solid fa-bullseye text-[#FFD700] text-sm"></i> Visi & Misi</h2>
+                <div class="grid md:grid-cols-2 gap-4 mt-2">
+                    <div class="highlight-box" style="background: rgba(255, 215, 0, 0.02);">
+                        <h4 class="font-bold text-[#FFD700] text-sm mb-2"><i class="fa-regular fa-eye mr-1"></i> Visi</h4>
+                        <p class="text-sm" style="color: rgba(255, 255, 255, 0.7);">
+                            Menjadi <strong>cryptocurrency terdepan di Indonesia</strong> yang menghubungkan 
+                            ekonomi digital dengan masyarakat luas melalui teknologi blockchain yang 
+                            <strong>inklusif, transparan, dan terpercaya</strong>.
+                        </p>
+                    </div>
+                    <div class="highlight-box" style="background: rgba(255, 215, 0, 0.02);">
+                        <h4 class="font-bold text-[#FFD700] text-sm mb-2"><i class="fa-solid fa-rocket mr-1"></i> Misi</h4>
+                        <ul style="list-style: none; padding-left: 0; font-size: 0.85rem; color: rgba(255, 255, 255, 0.7);">
+                            <li style="padding: 0.2rem 0 0.2rem 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: #FFD700;">✦</span>
+                                Menyediakan akses mudah ke aset kripto bagi masyarakat Indonesia
+                            </li>
+                            <li style="padding: 0.2rem 0 0.2rem 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: #FFD700;">✦</span>
+                                Membangun ekosistem DeFi yang aman dan bermanfaat
+                            </li>
+                            <li style="padding: 0.2rem 0 0.2rem 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: #FFD700;">✦</span>
+                                Mendorong adopsi blockchain di kalangan masyarakat awam
+                            </li>
+                            <li style="padding: 0.2rem 0 0.2rem 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: #FFD700;">✦</span>
+                                Menciptakan nilai jangka panjang bagi holder RECEH
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====== SEJARAH ====== -->
+            <div class="about-section">
+                <h2><i class="fa-solid fa-timeline text-[#FFD700] text-sm"></i> Perjalanan RECEH</h2>
+                <p>
+                    RECEH Token lahir dari keinginan untuk menciptakan <strong>cryptocurrency yang inklusif</strong> 
+                    bagi masyarakat Indonesia. Kami percaya bahwa teknologi blockchain seharusnya dapat diakses 
+                    oleh semua orang, bukan hanya segelintir elit teknologi.
+                </p>
+                <div class="highlight-box mt-3">
+                    <div class="milestone-item">
+                        <span class="milestone-date">Q1 2026</span>
+                        <div class="milestone-content">
+                            <h4>Ide & Konsep</h4>
+                            <p>Pembentukan tim awal dan perumusan konsep RECEH Token sebagai cryptocurrency untuk semua.</p>
+                        </div>
+                    </div>
+                    <div class="milestone-item">
+                        <span class="milestone-date">Q2 2026</span>
+                        <div class="milestone-content">
+                            <h4>Pengembangan & Audit</h4>
+                            <p>Pengembangan smart contract, audit keamanan, dan persiapan infrastruktur BNB Smart Chain.</p>
+                        </div>
+                    </div>
+                    <div class="milestone-item">
+                        <span class="milestone-date">Juni 2026</span>
+                        <div class="milestone-content">
+                            <h4>Token Sale Diluncurkan</h4>
+                            <p>Peluncuran resmi token sale RECEH di BNB Smart Chain dengan fase awal.</p>
+                        </div>
+                    </div>
+                    <div class="milestone-item">
+                        <span class="milestone-date">Q3 2026</span>
+                        <div class="milestone-content">
+                            <h4>Listing & Ekosistem</h4>
+                            <p>Listing di DEX, pembukaan liquidity pool, dan pengembangan ekosistem RECEH.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====== TEAM ====== -->
+            <div id="team" class="about-section">
+                <h2><i class="fa-solid fa-users text-[#FFD700] text-sm"></i> Tim Pengembang</h2>
+                <p>
+                    Kami adalah tim yang berdedikasi dari berbagai latar belakang — <strong>blockchain, 
+                    keuangan, pemasaran, dan pengembangan perangkat lunak</strong> — yang bersatu untuk 
+                    membawa RECEH Token menjadi cryptocurrency kebanggaan Indonesia.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+                    <div class="team-card">
+                        <div class="team-avatar">A</div>
+                        <h4>Andi</h4>
+                        <span class="role">CEO & Founder</span>
+                        <p class="bio">Pakar blockchain dengan pengalaman 5+ tahun di industri crypto.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">B</div>
+                        <h4>Budi</h4>
+                        <span class="role">CTO & Developer</span>
+                        <p class="bio">Full-stack developer dan smart contract engineer bersertifikat.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">C</div>
+                        <h4>Citra</h4>
+                        <span class="role">Marketing Lead</span>
+                        <p class="bio">Strategis pemasaran digital dengan fokus pada komunitas crypto.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">D</div>
+                        <h4>Dewi</h4>
+                        <span class="role">Community Manager</span>
+                        <p class="bio">Ahli komunitas dengan pengalaman mengelola 10K+ member.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====== TEKNOLOGI ====== -->
+            <div class="about-section">
+                <h2><i class="fa-solid fa-microchip text-[#FFD700] text-sm"></i> Teknologi & Keamanan</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="highlight-box" style="background: rgba(255, 215, 0, 0.02);">
+                        <h4 class="font-bold text-[#FFD700] text-sm mb-2"><i class="fa-solid fa-cube mr-1"></i> BNB Smart Chain</h4>
+                        <p class="text-sm" style="color: rgba(255, 255, 255, 0.7);">
+                            RECEH beroperasi di <strong>BNB Smart Chain (BSC)</strong>, jaringan blockchain 
+                            yang cepat, murah, dan kompatibel dengan Ethereum. Biaya transaksi rendah dan 
+                            kecepatan tinggi memungkinkan akses yang lebih luas.
+                        </p>
+                    </div>
+                    <div class="highlight-box" style="background: rgba(255, 215, 0, 0.02);">
+                        <h4 class="font-bold text-[#FFD700] text-sm mb-2"><i class="fa-solid fa-shield-halved mr-1"></i> Keamanan</h4>
+                        <p class="text-sm" style="color: rgba(255, 255, 255, 0.7);">
+                            Smart contract RECEH telah <strong>diaudit secara profesional</strong> dan 
+                            dirancang dengan standar keamanan tinggi. Kami mengutamakan keselamatan 
+                            dana dan data pengguna.
+                        </p>
+                    </div>
+                    <div class="highlight-box" style="background: rgba(255, 215, 0, 0.02);">
+                        <h4 class="font-bold text-[#FFD700] text-sm mb-2"><i class="fa-solid fa-handshake mr-1"></i> Desentralisasi</h4>
+                        <p class="text-sm" style="color: rgba(255, 255, 255, 0.7);">
+                            RECEH adalah token <strong>desentralisasi</strong> — tidak ada pihak tunggal 
+                            yang mengendalikan jaringan. Semua transaksi transparan di blockchain.
+                        </p>
+                    </div>
+                    <div class="highlight-box" style="background: rgba(255, 215, 0, 0.02);">
+                        <h4 class="font-bold text-[#FFD700] text-sm mb-2"><i class="fa-solid fa-infinity mr-1"></i> Interoperabilitas</h4>
+                        <p class="text-sm" style="color: rgba(255, 255, 255, 0.7);">
+                            RECEH kompatibel dengan berbagai wallet Web3 dan dapat diintegrasikan 
+                            dengan berbagai platform DeFi di ekosistem BSC.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====== NILAI ====== -->
+            <div class="about-section">
+                <h2><i class="fa-solid fa-heart text-[#FFD700] text-sm"></i> Nilai-Nilai RECEH</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-2">
+                    <div class="text-center p-4 rounded-xl border border-[#FFD700]/10 bg-black/20">
+                        <i class="fa-solid fa-hand-holding-heart text-2xl text-[#FFD700] mb-2"></i>
+                        <h4 class="font-bold text-sm text-white">Inklusif</h4>
+                        <p class="text-xs text-gray-500">Untuk semua lapisan masyarakat</p>
+                    </div>
+                    <div class="text-center p-4 rounded-xl border border-[#FFD700]/10 bg-black/20">
+                        <i class="fa-solid fa-scale-balanced text-2xl text-[#FFD700] mb-2"></i>
+                        <h4 class="font-bold text-sm text-white">Transparan</h4>
+                        <p class="text-xs text-gray-500">Semua transaksi terbuka</p>
+                    </div>
+                    <div class="text-center p-4 rounded-xl border border-[#FFD700]/10 bg-black/20">
+                        <i class="fa-solid fa-shield-halved text-2xl text-[#FFD700] mb-2"></i>
+                        <h4 class="font-bold text-sm text-white">Aman</h4>
+                        <p class="text-xs text-gray-500">Keamanan adalah prioritas</p>
+                    </div>
+                    <div class="text-center p-4 rounded-xl border border-[#FFD700]/10 bg-black/20">
+                        <i class="fa-solid fa-arrow-trend-up text-2xl text-[#FFD700] mb-2"></i>
+                        <h4 class="font-bold text-sm text-white">Inovatif</h4>
+                        <p class="text-xs text-gray-500">Terus berkembang</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====== MITRA ====== -->
+            <div class="about-section">
+                <h2><i class="fa-solid fa-handshake text-[#FFD700] text-sm"></i> Mitra & Ecosystem</h2>
+                <p>
+                    Kami bekerja sama dengan berbagai pihak untuk membangun ekosistem RECEH yang kuat:
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-3">
+                    <div class="bg-black/30 p-4 rounded-xl border border-[#FFD700]/10 text-center hover:border-[#FFD700]/30 transition-all">
+                        <i class="fa-brands fa-bitcoin text-2xl text-[#FFD700]/50"></i>
+                        <p class="text-xs text-gray-400 mt-1">PancakeSwap</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-xl border border-[#FFD700]/10 text-center hover:border-[#FFD700]/30 transition-all">
+                        <i class="fa-brands fa-ethereum text-2xl text-[#FFD700]/50"></i>
+                        <p class="text-xs text-gray-400 mt-1">BNB Chain</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-xl border border-[#FFD700]/10 text-center hover:border-[#FFD700]/30 transition-all">
+                        <i class="fa-solid fa-shield text-2xl text-[#FFD700]/50"></i>
+                        <p class="text-xs text-gray-400 mt-1">Audit Secure</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-xl border border-[#FFD700]/10 text-center hover:border-[#FFD700]/30 transition-all">
+                        <i class="fa-solid fa-wallet text-2xl text-[#FFD700]/50"></i>
+                        <p class="text-xs text-gray-400 mt-1">MetaMask</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====== KONTAK ====== -->
+            <div class="about-section">
+                <h2><i class="fa-solid fa-envelope text-[#FFD700] text-sm"></i> Hubungi Kami</h2>
+                <p>
+                    Kami selalu terbuka untuk pertanyaan, kolaborasi, atau sekadar berbicara tentang 
+                    masa depan crypto di Indonesia. Hubungi kami melalui:
+                </p>
+                <div class="highlight-box">
+                    <div class="flex flex-wrap gap-4">
+                        <a href="mailto:support@cryptoreceh.com" class="btn-secondary text-sm">
+                            <i class="fa-regular fa-envelope"></i> Email
+                        </a>
+                        <a href="https://t.me/cryptorecehcom" target="_blank" class="btn-secondary text-sm">
+                            <i class="fa-brands fa-telegram"></i> Telegram
+                        </a>
+                        <a href="https://x.com/cryptoreceh_" target="_blank" class="btn-secondary text-sm">
+                            <i class="fa-brands fa-twitter"></i> Twitter
+                        </a>
+                        <a href="https://github.com/cryptorecehcom" target="_blank" class="btn-secondary text-sm">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ====== CALL TO ACTION ====== -->
+        <div class="glass-card p-6 md:p-8 mt-6 text-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#FFD700]/5 to-transparent"></div>
+            <div class="relative z-10">
+                <h3 class="text-2xl font-bold gold-gradient">Bergabung dengan RECEH!</h3>
+                <p class="text-gray-400 mt-2 text-sm max-w-md mx-auto">
+                    Jadilah bagian dari <strong class="text-[#FFD700]">ekosistem RECEH</strong> dan bantu 
+                    membangun masa depan cryptocurrency di Indonesia.
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mt-4">
+                    <a href="https://tokoreceh.github.io/" class="btn-primary px-8 py-3 text-sm">
+                        <i class="fa-solid fa-bolt"></i> Beli RECEH
+                    </a>
+                    <a href="https://t.me/cryptorecehcom" target="_blank" class="btn-secondary px-8 py-3 text-sm">
+                        <i class="fa-brands fa-telegram"></i> Gabung Komunitas
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== FOOTER ====== -->
+        <footer class="glass-card p-5 mt-6">
+            <div class="flex justify-center gap-6 mb-3">
+                <a href="https://x.com/cryptoreceh_" target="_blank"
+                    class="text-[#FFD700]/50 hover:text-[#FFD700] text-xl transition-all duration-300 hover:scale-110">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://t.me/cryptorecehcom" target="_blank"
+                    class="text-[#FFD700]/50 hover:text-[#FFD700] text-xl transition-all duration-300 hover:scale-110">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="https://cryptoreceh.com/token/" target="_blank"
+                    class="text-[#FFD700]/50 hover:text-[#FFD700] text-xl transition-all duration-300 hover:scale-110">
+                    <i class="fa-solid fa-globe"></i>
+                </a>
+                <a href="https://github.com/cryptorecehcom" target="_blank"
+                    class="text-[#FFD700]/50 hover:text-[#FFD700] text-xl transition-all duration-300 hover:scale-110">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <p class="text-center text-gray-600 text-xs">
+                © 2026 <a href="https://cryptoreceh.com" class="text-[#FFD700]/60 hover:text-[#FFD700]">CryptoRECEH.com</a> —
+                Built on BNB Smart Chain | <a href="https://tokoreceh.github.io/privacy" class="text-gray-500 hover:text-white">Privacy</a> | <a href="https://tokoreceh.github.io/about" class="text-[#FFD700] hover:underline">About</a>
+            </p>
+            <p class="text-center text-gray-700 text-[10px] mt-1">
+                <i class="fa-solid fa-shield-halved mr-1"></i>
+                RECEH Cryptocurrency • Tentang Kami • Tim RECEH • Visi & Misi
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple hover effects for buttons
+        document.querySelectorAll('.btn-primary').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px) scale(1.02)';
+                this.style.boxShadow = '0 8px 40px rgba(255, 215, 0, 0.4)';
+            });
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+                this.style.boxShadow = '0 4px 25px rgba(255, 215, 0, 0.25)';
+            });
+        });
+
+        document.querySelectorAll('.btn-secondary').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+                this.style.boxShadow = '0 0 35px rgba(255, 215, 0, 0.08)';
+            });
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+                this.style.boxShadow = '';
+            });
+        });
+
+        // Animate stats on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.stat-number, .team-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+
+        // Force show after a moment
+        setTimeout(() => {
+            document.querySelectorAll('.stat-number, .team-card').forEach(el => {
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+            });
+        }, 300);
+    </script>
+
+</body>
+
+</html>
