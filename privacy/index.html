@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+    <!-- ====== SEO META TAGS ====== -->
+    <title>Kebijakan Privasi - RECEH Token</title>
+    <meta name="description" content="Kebijakan privasi RECEH Token. Pelajari bagaimana kami mengumpulkan, menggunakan, dan melindungi data pribadi Anda di platform RECEH cryptocurrency.">
+    <meta name="keywords" content="kebijakan privasi, privasi, rec eh, cryptocurrency, data pribadi, keamanan data">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="CryptoRECEH">
+    <link rel="canonical" href="https://tokoreceh.github.io/privacy">
+
+    <!-- ====== OPEN GRAPH ====== -->
+    <meta property="og:title" content="Kebijakan Privasi - RECEH Token">
+    <meta property="og:description" content="Kebijakan privasi RECEH Token. Pelajari bagaimana kami mengelola dan melindungi data pribadi Anda.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tokoreceh.github.io/privacy">
+    <meta property="og:image" content="https://tokoreceh.github.io/favicon.png">
+    <meta property="og:site_name" content="RECEH Token">
+    <meta property="og:locale" content="id_ID">
+
+    <!-- ====== TWITTER CARD ====== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kebijakan Privasi - RECEH Token">
+    <meta name="twitter:description" content="Kebijakan privasi RECEH Token. Pelajari bagaimana kami mengelola dan melindungi data pribadi Anda.">
+    <meta name="twitter:image" content="https://tokoreceh.github.io/favicon.png">
+
+    <!-- ====== FAVICON ====== -->
+    <link rel="shortcut icon" type="image/png" href="https://tokoreceh.github.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://tokoreceh.github.io/favicon.png">
+
+    <!-- ====== EXTERNAL LIBRARIES ====== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        /* ====== CSS VARIABLES ====== */
+        :root {
+            --gold: #FFD700;
+            --gold-dark: #FF8C00;
+            --gold-glow: rgba(255, 215, 0, 0.15);
+            --bg-dark: #0A0A0F;
+            --card-bg: rgba(18, 18, 24, 0.75);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-dark);
+            color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        /* ====== ANIMATIONS ====== */
+        @keyframes floatSlow {
+            0%,
+            100% { transform: translateY(0px) scale(1); }
+            50% { transform: translateY(-10px) scale(1.02); }
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes hologramPulse {
+            0% { text-shadow: 0 0 7px rgba(255, 215, 0, 0.2), 0 0 20px rgba(255, 215, 0, 0.05); opacity: 0.9; }
+            50% { text-shadow: 0 0 25px rgba(255, 215, 0, 0.6), 0 0 60px rgba(255, 215, 0, 0.2); opacity: 1; }
+            100% { text-shadow: 0 0 7px rgba(255, 215, 0, 0.2), 0 0 20px rgba(255, 215, 0, 0.05); opacity: 0.9; }
+        }
+
+        /* ====== BACKGROUND EFFECTS ====== */
+        .bg-gradient-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(circle at 10% 10%, rgba(255, 215, 0, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 90%, rgba(255, 215, 0, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.02) 0%, transparent 60%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hologram-orb {
+            position: fixed;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.05;
+            filter: blur(80px);
+            animation: floatSlow 12s ease-in-out infinite;
+        }
+
+        .hologram-orb:nth-child(1) {
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, #FFD700, transparent 70%);
+            top: -200px;
+            left: -200px;
+            animation-delay: 0s;
+        }
+
+        .hologram-orb:nth-child(2) {
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, #FF8C00, transparent 70%);
+            bottom: -250px;
+            right: -250px;
+            animation-delay: -5s;
+        }
+
+        /* ====== GLASS CARD ====== */
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 215, 0, 0.08);
+            border-radius: 28px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: 29px;
+            background: linear-gradient(135deg, transparent 30%, rgba(255, 215, 0, 0.06), transparent 70%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+        }
+
+        .glass-card:hover::before {
+            opacity: 1;
+        }
+
+        /* ====== GOLD GRADIENT ====== */
+        .gold-gradient {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 25%, #FFD700 50%, #FF8C00 75%, #FFD700 100%);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+            animation: hologramPulse 4s ease-in-out infinite, gradientMove 6s ease-in-out infinite;
+        }
+
+        /* ====== SCROLLBAR ====== */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.01);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 215, 0, 0.15);
+            border-radius: 10px;
+        }
+
+        /* ====== PRIVACY CONTENT ====== */
+        .privacy-section {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .privacy-section:last-child {
+            border-bottom: none;
+        }
+
+        .privacy-section h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #FFD700;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .privacy-section p,
+        .privacy-section li {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .privacy-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .privacy-section ul li {
+            padding: 0.4rem 0 0.4rem 1.8rem;
+            position: relative;
+        }
+
+        .privacy-section ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #FFD700;
+            font-weight: 700;
+        }
+
+        .privacy-section .highlight-box {
+            background: rgba(255, 215, 0, 0.04);
+            border: 1px solid rgba(255, 215, 0, 0.08);
+            border-radius: 16px;
+            padding: 1.25rem;
+            margin: 1rem 0;
+        }
+
+        .privacy-section .highlight-box strong {
+            color: #FFD700;
+        }
+
+        .last-updated {
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 0.8rem;
+            text-align: right;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        /* ====== RESPONSIVE ====== */
+        @media (max-width: 480px) {
+            .glass-card { padding: 1.25rem; }
+            .privacy-section h2 { font-size: 1.05rem; }
+            .privacy-section p, .privacy-section li { font-size: 0.85rem; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ====== BACKGROUND EFFECTS ====== -->
+    <div class="bg-gradient-overlay"></div>
+    <div class="hologram-orb"></div>
+    <div class="hologram-orb"></div>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <div class="max-w-4xl mx-auto px-4 py-6 relative z-10">
+
+        <!-- ====== NAVBAR ====== -->
+        <nav class="glass-card px-6 py-3 mb-6 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#FFD700] to-[#FF8C00] p-0.5 flex-shrink-0">
+                    <img src="https://tokoreceh.github.io/favicon.png"
+                        alt="RECEH Token" class="w-full h-full rounded-full object-cover border border-[#0A0A0F]">
+                </div>
+                <span class="font-black text-lg gold-gradient">RECEH</span>
+            </div>
+            <a href="https://tokoreceh.github.io/" class="btn-primary text-xs py-2 px-4" style="background: linear-gradient(135deg, #FFD700, #FFAA00); color: #0A0A0F; font-weight: 700; padding: 0.5rem 1.25rem; border-radius: 50px; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem; transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1); box-shadow: 0 4px 25px rgba(255, 215, 0, 0.25);">
+                <i class="fa-solid fa-arrow-left"></i> Kembali
+            </a>
+        </nav>
+
+        <!-- ====== HEADER ====== -->
+        <div class="glass-card p-6 md:p-10 mb-6 text-center">
+            <div class="relative z-10">
+                <div class="inline-flex items-center gap-2 bg-[#FFD700]/10 border border-[#FFD700]/20 rounded-full px-4 py-1.5 mb-4">
+                    <i class="fa-solid fa-shield-halved text-[#FFD700] text-xs"></i>
+                    <span class="text-xs font-semibold text-[#FFD700]">KEBIJAKAN PRIVASI</span>
+                </div>
+                <h1 class="text-3xl md:text-5xl font-black gold-gradient text-balance">
+                    Kebijakan Privasi <span class="text-white">RECEH</span>
+                </h1>
+                <p class="text-gray-400 mt-3 max-w-2xl mx-auto text-sm md:text-base">
+                    Kami menghargai privasi Anda. Pelajari bagaimana RECEH Token mengumpulkan, menggunakan, 
+                    dan melindungi data pribadi Anda saat menggunakan platform kami.
+                </p>
+                <div class="flex justify-center gap-6 mt-4 text-xs text-gray-500">
+                    <span><i class="fa-regular fa-calendar text-[#FFD700] mr-1"></i> Berlaku: 1 Juli 2026</span>
+                    <span><i class="fa-regular fa-clock text-[#FFD700] mr-1"></i> Terakhir diperbarui: 1 Juli 2026</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== PRIVACY CONTENT ====== -->
+        <div class="glass-card p-6 md:p-10">
+
+            <!-- Pendahuluan -->
+            <div class="privacy-section">
+                <h2><i class="fa-solid fa-circle-info text-[#FFD700] text-sm"></i> Pendahuluan</h2>
+                <p>
+                    Selamat datang di <strong>RECEH Token</strong>. Kami berkomitmen untuk melindungi privasi 
+                    dan data pribadi Anda. Kebijakan privasi ini menjelaskan bagaimana kami mengumpulkan, 
+                    menggunakan, menyimpan, dan melindungi informasi yang Anda berikan saat menggunakan 
+                    platform <strong>RECEH</strong> (<a href="https://tokoreceh.github.io" class="text-[#FFD700] hover:underline">tokoreceh.github.io</a>).
+                </p>
+                <p class="mt-2">
+                    Dengan menggunakan platform kami, Anda menyetujui pengumpulan dan penggunaan informasi 
+                    sesuai dengan kebijakan ini. Mohon baca dengan seksama.
+                </p>
+            </div>
+
+            <!-- Informasi yang Dikumpulkan -->
+            <div class="privacy-section">
+                <h2><i class="fa-solid fa-database text-[#FFD700] text-sm"></i> Informasi yang Kami Kumpulkan</h2>
+                <p>
+                    Kami mengumpulkan beberapa jenis informasi untuk menyediakan dan meningkatkan layanan kami:
+                </p>
+                <div class="highlight-box">
+                    <ul>
+                        <li><strong>Alamat Dompet (Wallet Address)</strong> — Alamat publik dompet Web3 Anda yang terhubung ke platform.</li>
+                        <li><strong>Data Transaksi</strong> — Detail transaksi pembelian RECEH, termasuk jumlah BNB dan RECEH yang ditukar.</li>
+                        <li><strong>Informasi Teknis</strong> — Alamat IP, jenis peramban, versi OS, dan data penggunaan platform.</li>
+                        <li><strong>Kontak (Opsional)</strong> — Jika Anda menghubungi kami melalui email atau media sosial.</li>
+                    </ul>
+                </div>
+                <p class="text-xs text-gray-500">
+                    <i class="fa-solid fa-info-circle text-[#FFD700] mr-1"></i>
+                    Kami <strong>tidak</strong> mengumpulkan data pribadi seperti nama, alamat fisik, atau nomor telepon 
+                    kecuali Anda memberikannya secara sukarela.
+                </p>
+            </div>
+
+            <!-- Penggunaan Informasi -->
+            <div class="privacy-section">
+                <h2><i class="fa-solid fa-gear text-[#FFD700] text-sm"></i> Bagaimana Kami Menggunakan Informasi</h2>
+                <p>
+                    Informasi yang kami kumpulkan digunakan untuk:
+                </p>
+                <ul>
+                    <li>Memproses transaksi pembelian RECEH Token.</li>
+                    <li>Menampilkan riwayat pembelian dan saldo token Anda.</li>
+                    <li>Menganalisis penggunaan platform untuk meningkatkan pengalaman pengguna.</li>
+                    <li>Mendeteksi dan mencegah aktivitas mencurigakan atau penipuan.</li>
+                    <li>Memberikan dukungan pelanggan dan merespons pertanyaan Anda.</li>
+                    <li>Mengirimkan notifikasi terkait penjualan token dan pembaruan platform.</li>
+                </ul>
+            </div>
+
+            <!-- Berbagi Data -->
+            <div class="privacy-section">
+                <h2><i class="fa-solid fa-share-nodes text-[#FFD700] text-sm"></i> Berbagi Data dengan Pihak Ketiga</h2>
+                <p>
+                    Kami <strong>tidak</strong> menjual, menyewakan, atau membagikan data pribadi Anda kepada pihak 
+                    ketiga untuk tujuan pemasaran. Namun, kami dapat berbagi data dalam situasi berikut:
+                </p>
+                <ul>
+                    <li><strong>Penyedia Layanan</strong> — Kami menggunakan layanan pihak ketiga (seperti RPC node BSC) untuk memproses transaksi blockchain.</li>
+                    <li><strong>Kepatuhan Hukum</strong> — Jika diwajibkan oleh hukum atau untuk melindungi hak, properti, atau keselamatan kami.</li>
+                    <li><strong>Analitik</strong> — Kami menggunakan alat analitik anonim untuk memahami penggunaan platform.</li>
+                </ul>
+                <div class="highlight-box mt-3">
+                    <p class="text-sm">
+                        <i class="fa-solid fa-chain text-[#FFD700] mr-1"></i>
+                        <strong>Perhatian:</strong> Semua transaksi di BNB Smart Chain bersifat publik dan dapat 
+                        dilihat di <a href="https://bscscan.com" target="_blank" class="text-[#FFD700] hover:underline">BscScan</a>. 
+                        Alamat dompet Anda akan terlihat di blockchain.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Keamanan Data -->
+            <div class="privacy-section">
+                <h2><i class="fa-solid fa-lock text-[#FFD700] text-sm"></i> Keamanan Data</h2>
+                <p>
+                    Kami mengambil langkah-langkah keamanan yang wajar untuk melindungi data Anda dari akses, 
+                    perubahan, pengungkapan, atau penghancuran yang tidak sah:
+                </p>
+                <ul>
+                    <li>Semua koneksi ke platform menggunakan HTTPS terenkripsi.</li>
+                    <li>Kami tidak menyimpan kunci privat atau seed phrase Anda — semua tetap di dompet Anda.</li>
+                    <li>Data transaksi disimpan di blockchain yang tidak dapat diubah.</li>
+                    <li>Kami secara rutin memperbarui sistem untuk mencegah kerentanan keamanan.</li>
+                </ul>
+                <p class="mt-2 text-sm text-gray-400">
+                    <i class="fa-solid fa-triangle-exclamation text-[#FFD700] mr-1"></i>
+                    Meskipun kami berusaha melindungi data Anda, tidak ada metode transmisi data atau penyimpanan 
+                    elektronik yang 100% aman. Anda menggunakan platform dengan risiko Anda sendiri.
+                </p>
+            </div>
+
+            <!-- Cookies & Pelacakan -->
+            <div class="privacy-section">
+                <h2><i class="fa-solid fa-cookie-bite text-[#FFD700] text-sm"></i> Cookies & Pelacakan</h2>
+                <p>
+                    Platform kami menggunakan cookies dan teknologi pelacakan serupa untuk:
+                </p>
+                <ul>
+                    <li>Mengingat preferensi Anda (seperti koneksi wallet).</li>
+                    <li>Menganalisis lalu lintas dan penggunaan platform.</li>
+                    <li>Meningkatkan kecepatan dan kinerja situs.</li>
+                </ul>
+                <p class="mt-2">
+                    Anda dapat mengatur peramban untuk menolak semua cookies atau memberi tahu saat cookie dikirim. 
+                    Namun, beberapa fitur platform mungkin tidak berfungsi dengan baik tanpa cookies.
+                </p>
+            </div>
+
+            <!-- Hak Pengguna -->
+            <div class="privacy-section">
+                <h2><i class="fa-solid fa-user-check text-[#FFD700] text-sm"></i> Hak Anda sebagai Pengguna</h2>
+                <p>
+                    Anda memiliki hak atas data pribadi Anda, termasuk:
+                </p>
+                <ul>
+                    <li><strong>Akses</strong> — Meminta salinan data pribadi yang kami miliki tentang Anda.</li>
+                    <li><strong>Koreksi</strong> — Meminta perbaikan data yang tidak akurat.</li>
+                    <li><strong>Penghapusan</strong> — Meminta penghapusan data pribadi Anda (dengan batasan hukum).</li>
+                    <li><strong>Menolak</strong> — Menolak pengumpulan data untuk tujuan tertentu.</li>
+                </ul>
+                <div class="highlight-box mt-3">
+                    <p class="text-sm">
+                        <i class="fa-solid fa-envelope text-[#FFD700] mr-1"></i>
+                        Untuk menggunakan hak-hak ini, silakan hubungi kami di: 
+                        <a href="mailto:admin@cryptoreceh.com" class="text-[#FFD700] hover:underline">admin@cryptoreceh.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Data Anak -->
+            <div class="privacy-section">
+                <h2><i class="fa-solid fa-child text-[#FFD700] text-sm"></i> Data Anak</h2>
+                <p>
+                    Platform kami tidak ditujukan untuk anak-anak di bawah usia 18 tahun. Kami tidak secara sengaja 
+                    mengumpulkan data pribadi dari anak-anak. Jika Anda orang tua/wali dan mengetahui bahwa anak Anda 
+                    telah memberikan data kepada kami, hubungi kami untuk menghapus data tersebut.
+                </p>
+            </div>
+
+            <!-- Perubahan Kebijakan -->
+            <div class="privacy-section">
+                <h2><i class="fa-solid fa-pen-to-square text-[#FFD700] text-sm"></i> Perubahan Kebijakan Privasi</h2>
+                <p>
+                    Kami dapat memperbarui kebijakan privasi ini dari waktu ke waktu. Perubahan akan diumumkan 
+                    di halaman ini dengan tanggal "Terakhir diperbarui" yang baru. Kami mendorong Anda untuk 
+                    memeriksa halaman ini secara berkala untuk mengetahui perubahan terbaru.
+                </p>
+                <p class="mt-2 text-sm text-gray-400">
+                    <i class="fa-solid fa-bell text-[#FFD700] mr-1"></i>
+                    Perubahan signifikan akan diberitahukan melalui platform atau media sosial kami.
+                </p>
+            </div>
+
+            <!-- Kontak -->
+            <div class="privacy-section">
+                <h2><i class="fa-solid fa-headset text-[#FFD700] text-sm"></i> Hubungi Kami</h2>
+                <p>
+                    Jika Anda memiliki pertanyaan, kekhawatiran, atau permintaan terkait kebijakan privasi ini, 
+                    silakan hubungi kami:
+                </p>
+                <div class="highlight-box">
+                    <p class="text-sm flex items-center gap-2">
+                        <i class="fa-regular fa-envelope text-[#FFD700]"></i>
+                        <span class="text-white">Email:</span>
+                        <a href="mailto:admin@cryptoreceh.com" class="text-[#FFD700] hover:underline">admin@cryptoreceh.com</a>
+                    </p>
+                    <p class="text-sm flex items-center gap-2 mt-2">
+                        <i class="fa-brands fa-telegram text-[#FFD700]"></i>
+                        <span class="text-white">Telegram:</span>
+                        <a href="https://t.me/cryptorecehcom" target="_blank" class="text-[#FFD700] hover:underline">@cryptorecehcom</a>
+                    </p>
+                    <p class="text-sm flex items-center gap-2 mt-2">
+                        <i class="fa-brands fa-twitter text-[#FFD700]"></i>
+                        <span class="text-white">Twitter:</span>
+                        <a href="https://x.com/cryptoreceh_" target="_blank" class="text-[#FFD700] hover:underline">@cryptoreceh_</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="privacy-section">
+                <h2><i class="fa-solid fa-scale-balanced text-[#FFD700] text-sm"></i> Disclaimer</h2>
+                <div class="highlight-box" style="background: rgba(255, 215, 0, 0.02); border-color: rgba(255, 215, 0, 0.05);">
+                    <p class="text-sm text-gray-400">
+                        <i class="fa-solid fa-triangle-exclamation text-[#FFD700] mr-1"></i>
+                        Platform RECEH Token beroperasi di BNB Smart Chain yang bersifat <strong>desentralisasi</strong>. 
+                        Transaksi yang Anda lakukan tidak dapat dibatalkan setelah diproses di blockchain. 
+                        Kami tidak bertanggung jawab atas kerugian akibat kesalahan pengguna, kehilangan kunci privat, 
+                        atau masalah teknis pada jaringan blockchain.
+                    </p>
+                    <p class="text-sm text-gray-400 mt-2">
+                        <i class="fa-solid fa-gavel text-[#FFD700] mr-1"></i>
+                        RECEH Token adalah aset kripto yang bersifat <strong>spekulatif</strong>. Investasi di 
+                        cryptocurrency memiliki risiko tinggi. Lakukan riset sendiri sebelum membeli.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Last Updated -->
+            <div class="last-updated">
+                <i class="fa-regular fa-clock mr-1"></i>
+                Terakhir diperbarui: 1 Juli 2026
+            </div>
+
+        </div>
+
+        <!-- ====== BACK TO TOP ====== -->
+        <div class="text-center mt-6">
+            <a href="https://tokoreceh.github.io/" class="btn-primary inline-flex items-center gap-2 text-sm" style="background: linear-gradient(135deg, #FFD700, #FFAA00); color: #0A0A0F; font-weight: 700; padding: 0.75rem 1.5rem; border-radius: 50px; text-decoration: none; box-shadow: 0 4px 25px rgba(255, 215, 0, 0.25); transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1);">
+                <i class="fa-solid fa-arrow-left"></i> Kembali ke Beranda RECEH
+            </a>
+        </div>
+
+        <!-- ====== FOOTER ====== -->
+        <footer class="glass-card p-5 mt-6">
+            <div class="flex justify-center gap-6 mb-3">
+                <a href="https://x.com/cryptoreceh_" target="_blank"
+                    class="text-[#FFD700]/50 hover:text-[#FFD700] text-xl transition-all duration-300 hover:scale-110">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://t.me/cryptorecehcom" target="_blank"
+                    class="text-[#FFD700]/50 hover:text-[#FFD700] text-xl transition-all duration-300 hover:scale-110">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="https://cryptoreceh.com/token/" target="_blank"
+                    class="text-[#FFD700]/50 hover:text-[#FFD700] text-xl transition-all duration-300 hover:scale-110">
+                    <i class="fa-solid fa-globe"></i>
+                </a>
+                <a href="https://github.com/cryptorecehcom" target="_blank"
+                    class="text-[#FFD700]/50 hover:text-[#FFD700] text-xl transition-all duration-300 hover:scale-110">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <p class="text-center text-gray-600 text-xs">
+                © 2026 <a href="https://cryptoreceh.com" class="text-[#FFD700]/60 hover:text-[#FFD700]">CryptoRECEH.com</a> —
+                Built on BNB Smart Chain | <a href="https://tokoreceh.github.io/privacy" class="text-[#FFD700] hover:underline">Privacy</a>
+            </p>
+            <p class="text-center text-gray-700 text-[10px] mt-1">
+                <i class="fa-solid fa-shield-halved mr-1"></i>
+                RECEH Cryptocurrency • Kebijakan Privasi • Keamanan Data
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple button hover effect
+        document.querySelectorAll('.btn-primary').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px) scale(1.02)';
+                this.style.boxShadow = '0 8px 40px rgba(255, 215, 0, 0.4)';
+            });
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+                this.style.boxShadow = '0 4px 25px rgba(255, 215, 0, 0.25)';
+            });
+        });
+    </script>
+
+</body>
+
+</html>
